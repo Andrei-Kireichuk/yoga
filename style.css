@@ -91,7 +91,7 @@ a {
     top: 5rem;
     flex-direction: column;
     background-color: #fff;
-    width: 100%;
+    width: 100vw;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
