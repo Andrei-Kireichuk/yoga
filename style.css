@@ -14,6 +14,7 @@ body {
 
 .header {
   display: flex;
+  padding-top: 20px;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
@@ -22,18 +23,113 @@ body {
   height: 70px;
 }
 
-.navimenu {
-  padding-left: 40px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
 }
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #2e076e;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 2vw;
+}
+
+.nav-link {
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 400;
+  color: #2e076e;
+}
+
+.nav-link:hover {
+  color: #482ff7;
+}
+
+.nav-logo {
+  padding-left: 15px;
+}
+
 ul {
   list-style-type: none;
 }
 li {
   display: inline;
-  padding-left: 20px;
-  font-size: 24px;
+  padding-left: 15px;
+  font-size: clamp(16px, 2vw, 24px);
   color: #2e076e;
+  list-style: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+.social {
+  padding: 0 20px;
+}
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-logo {
+    display: none;
+  }
+}
+
 .social__icon {
   width: 35px;
   margin: 5px;
@@ -45,7 +141,7 @@ li {
 h1 {
   text-align: center;
   margin: 40px 0;
-  font-size: 80px;
+  font-size: 64px;
   font-weight: 600;
   color: #2e076e;
 }
@@ -60,6 +156,14 @@ h1 {
   background-position-y: -600px;
 }
 
+.title__doble {
+  text-align: center;
+  margin: 500px 0;
+  font-size: 80px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
 .img__first {
   width: 100%;
   margin-left: auto;
@@ -70,7 +174,7 @@ h1 {
 .about {
   text-align: center;
   margin: 100px 0;
-  font-size: 64px;
+  font-size: 58px;
   font-weight: 600;
   color: #2e076e;
 }
@@ -105,6 +209,9 @@ h1 {
   display: flex;
   justify-content: space-around;
 }
+.block__sales {
+  width: 100%;
+}
 .footer__wrapper {
   width: 100%;
   background-color: #0040ff2e;
@@ -118,6 +225,31 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.myButton {
+  box-shadow: inset 0px 0px 0px 0px #dcecfb;
+  background: linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+  background-color: #bddbfa;
+  border-radius: 6px;
+  border: 2px solid #84bbf3;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 14px 33px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528ecc;
+  margin: 60px 45%;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+  background-color: #80b5ea;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
 }
 
 /*Start Dropdown
