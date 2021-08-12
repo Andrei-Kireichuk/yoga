@@ -40,7 +40,7 @@ body {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #2e076e;
+  background-color: #ffffff;
 }
 .nav-menu {
   display: flex;
@@ -55,11 +55,11 @@ body {
 .nav-link {
   font-size: clamp(16px, 2vw, 24px);
   font-weight: 400;
-  color: #2e076e;
+  color: #ffffff;
 }
 
 .nav-link:hover {
-  color: #482ff7;
+  border-bottom: 1px solid #ffffff;
 }
 
 .nav-logo {
@@ -73,7 +73,7 @@ li {
   display: inline;
   padding-left: 15px;
   font-size: clamp(16px, 2vw, 24px);
-  color: #2e076e;
+  color: #222222;
   list-style: none;
 }
 
@@ -83,6 +83,11 @@ a {
 
 .social {
   padding: 0 20px;
+}
+
+.readmore {
+  color: dimgray;
+  font-size: 18px;
 }
 @media only screen and (max-width: 768px) {
   .nav-menu {
@@ -140,10 +145,10 @@ a {
 }
 h1 {
   text-align: center;
-  margin: 40px 0;
-  font-size: 64px;
+  margin: 15vh 0 85vh 0;
+  font-size: 50px;
   font-weight: 600;
-  color: #2e076e;
+  color: #ffffff;
 }
 
 .title__img {
@@ -173,30 +178,47 @@ h1 {
 
 .about {
   text-align: center;
-  margin: 100px 0;
-  font-size: 58px;
+  margin: 100px auto;
+  font-size: 50px;
   font-weight: 600;
-  color: #2e076e;
+  color: #222222;
+  border-bottom: 1px solid #222222;
+}
+.about-title {
+  width: 250px;
 }
 
 .about__wrapper {
   display: flex;
-  max-width: 1440px;
+  max-width: 1200px;
   justify-content: space-between;
   margin: 0 auto;
 }
 
 .text__img {
-  width: 50%;
+  width: 45%;
   object-fit: cover;
   overflow: hidden;
 }
+
+#myVideo {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  right: -9999px;
+  top: 0;
+  left: -9999px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  min-height: 850px;
+}
 .text__about {
-  width: 50%;
-  margin: 20px;
+  width: 55%;
+  margin-right: 20px;
   font-size: 24px;
-  color: #2e076e;
-  line-height: 1.5;
+  color: #222222;
+  line-height: 1.8;
   font-weight: 500;
 }
 .image__about {
@@ -226,7 +248,7 @@ h1 {
   justify-content: space-around;
   align-items: center;
 }
-.myButton {
+.mybutton {
   box-shadow: inset 0px 0px 0px 0px #dcecfb;
   background: linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
   background-color: #bddbfa;
@@ -243,11 +265,11 @@ h1 {
   text-shadow: 0px 1px 0px #528ecc;
   margin: 60px 45%;
 }
-.myButton:hover {
+.mybutton:hover {
   background: linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
   background-color: #80b5ea;
 }
-.myButton:active {
+.mybutton:active {
   position: relative;
   top: 1px;
 }
