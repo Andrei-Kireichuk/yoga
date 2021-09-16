@@ -35,3 +35,26 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+function readMore() {
+  var readmore = document.getElementById('readmore')
+  var hiddentext = document.getElementById('hiddentext')
+  var hidenbutton = document.getElementById('hide');
+ readmore.style.display = "none";
+hiddentext.style.display = "inline";
+hidenbutton.style.display = "inline";
+  
+}
+
+function hide () {
+  var hidenbutton = document.getElementById('hide');
+  var hiddentext = document.getElementById('hiddentext');
+  var readmore = document.getElementById('readmore');
+  hidenbutton.style.display = "none";
+  hiddentext.style.display = "none";
+  readmore.style.display = "inline";
+  
+
+}
+
+
