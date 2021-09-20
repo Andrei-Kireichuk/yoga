@@ -17,7 +17,7 @@
 .slider__wrapper {
   position: relative;
   overflow: hidden;
-  background-color: #eee;
+  background-color: #ffffff;
 }
 
 /* стили для элемента, в котором непосредственно расположены элементы (слайды) */
@@ -42,7 +42,7 @@
 .slider__control {
   position: absolute;
   top: 50%;
-  width: 40px;
+  width: 50px;
   height: 50px;
   transform: translateY(-50%);
   display: none;
@@ -74,7 +74,7 @@
 }
 
 .slider__control::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
