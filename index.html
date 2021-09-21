@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="images/untitled(2).svg">
   <link rel="icon" type="image/png" sizes="192x192" href="images/untitled(2).svg">
     <meta charset="UTF-8">
@@ -91,8 +92,36 @@
         
       </div>
       <div class="block__third-container">
-        <h2 class="about">Расписание занятий</h2>
-
+        <h2 class="about">Корпоративная программа "Йога SMART"</h2>
+        <div class="about__wrapper">
+          <div class="text__img"><img class="image__about" src="/images/corporate.png" alt="pic"></div>
+          <div class="text__wrapper">
+          <p class="text__width-right">
+            Корпоративная йога - это программа, обучающая
+техникам снятия напряжения и стресса на рабочем
+месте (4-5 занятий по 2,5 - 3 часа). </p>
+<p class="text__width-right">Практическая часть:<br>
+• физические упражнения (асаны),
+снимающие напряжения в теле,<br>
+• дыхательные упражнения
+(пранаямы),<br>
+• техники релаксации и
+медитации.<br>
+Теоретическая часть:
+• практические знания о том как
+работает наш ум, память,
+интелект и эго.</p>
+<p class="text__width-right">Результат:<br>
+- ясность мышления, улучшение концентрации;<br>
+- улучшение эффективности на рабочем месте;<br>
+- подъем энергии и энтузиазма;<br>
+- улучшение атмосферы и сплоченности,<br>
+- развитие взаимопонимания в коллективе;<br>
+- овладение навыками управления стрессом;<br>
+- достижение баланса.<br>
+                     </p>
+</div>
+        </div>
      
 
       </div>
@@ -214,10 +243,59 @@
     </div>
   </div>
 </div>
-<div class="block__sales">
+<!-- <div class="block__sales">
   <div class="about">Купить Онлайн-курс</div>
   <a href="#" class="mybutton">Онлайн курс</a>
-</div>
+</div> -->
+<form class="g-form" id="g-form-1" method="POST" action="" autocomplete="off">
+    <h2 class="g-form__title g-form__title_main about">Отправьте заявку на онлайн-курс</h2>
+    <h2 class="g-form__title g-form__title_respond"></h2>
+    <div class="g-form__preloader"></div>
+    <div class="g-form__inputs">
+        <div class="g-form__container">
+            
+      <fieldset class="g-form__input-wrapper">
+        <div class="input__text">Как Вас зовут</div>
+        <input class="g-form__input g-form__input_name" id="name" name="Имя" placeholder="Введите ваше имя" required>
+      </fieldset>
+   <div class="tel-email__wrapper">
+      <fieldset class="g-form__input-wrapper">
+        <div class="input__text">Номер телефона</div>
+        <input class="g-form__input g-form__input_tel" id="tel" type="tel" name="Телефон" placeholder="+ ___ (__) ___ - __ - __">
+      </fieldset>
+   
+      <fieldset class="g-form__input-wrapper">
+        <div class="input__text">Электронная почта</div>
+        <input id="email" name="Email" type="email" value=""
+        required placeholder="Введите ваш email"/>
+      </fieldset>
+   </div>
+      <fieldset class="g-form__input-wrapper">
+        <div class="input__text">Ник в Инстаграме*</div>
+        <input id="nickinstagram" name="nickinstagram"  value=""
+        required placeholder="Введите ваш Ник в Инстаграме"/>
+      </fieldset>
+      
+      <fieldset class="g-form__input-wrapper">
+        <div class="input__text">Ваше сообщение</div>
+        <textarea id="message" name="Сообщение" rows="5"
+        placeholder="Введите сообщение"></textarea>
+      </fieldset>
+   
+      <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+      <label for="honeypot">  <!-- Помогает бороться со спамом. Должно быть пустым! --></label>
+        <input id="honeypot" type="text" name="honeypot" value="">
+      </fieldset>
+   
+      <div class="g-form__button-wrapper">
+        <button class="g-form__button">Отправить заявку</button>
+      </div>
+      <div class="input__text">*Онлайн-занятия проходят в закрытом канале Инстаграм, поэтому для участия необходимо иметь аккаунт в Инстаграм</div>
+    </div>
+    <img class='image__about' style="width: 50%;" src="/images/form.jpg" alt="pic">
+    </div>
+  </form>
+  <script src="g-form.js"></script>
   <div class="footer__wrapper">
     <footer class="footer__container">
       <div class="social">

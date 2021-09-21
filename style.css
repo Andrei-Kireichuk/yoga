@@ -406,6 +406,18 @@ a {
   /* or 26px */
   color: #707070;
 }
+.text__width-right {
+  margin: 0 auto;
+  margin-left: 30px;
+  padding-left: 30px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 33px;
+  /* or 26px */
+  color: #707070;
+}
 
 .sales__price {
   display: flex;
@@ -547,6 +559,10 @@ a {
   border-radius: 32px;
   height: 410px;
 }
+.image__about-form {
+  width: 100%;
+  border-radius: 32px;
+}
 
 .video__container {
   max-width: 1200px;
@@ -558,10 +574,95 @@ a {
   width: 100%;
 }
 
+.g-form__input-wrapper_hidden {
+  display: none;
+  overflow: hidden;
+}
+
+.g-form__inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto 120px;
+  padding: 64px;
+  border: 1px solid dimgray;
+  border-radius: 36px;
+}
+
+.g-form__title_respond {
+  color: #0a0c6c !important;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.g-form__input-wrapper {
+  /* height: 80px; */
+  margin-bottom: 10px;
+  border: none;
+}
+
+.g-form__container {
+  width: 50%;
+}
+
+.tel-email__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.g-form__input {
+  height: 40px;
+  border-radius: 25px;
+  border: 1px solid rgba(105, 105, 105, 0.205);
+  width: 80%;
+  padding-left: 15px;
+}
+.input__text {
+  font-size: 16px;
+  color: dimgray;
+}
+#tel {
+  width: 100%;
+  padding-left: 15px;
+  border: 1px solid rgba(105, 105, 105, 0.205);
+}
+
+#email {
+  height: 40px;
+  padding-left: 15px;
+  border-radius: 25px;
+  /* width: 80%; */
+  border: 1px solid rgba(105, 105, 105, 0.205);
+}
+#nickinstagram {
+  padding-left: 15px;
+  height: 40px;
+  border-radius: 25px;
+  width: 80%;
+  border: 1px solid rgba(105, 105, 105, 0.205);
+}
+#message {
+  padding-left: 15px;
+  padding-top: 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: 1px solid rgba(105, 105, 105, 0.205);
+}
+
+textarea {
+  resize: none;
+  width: 80%;
+}
+
+.g-form__button {
+}
+
 .footer__wrapper {
   width: 100%;
   background-color: #eaf4fe;
   height: 80px;
+  border: none;
 }
 
 .nav-footer {

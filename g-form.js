@@ -6,7 +6,7 @@ $(function() {
       let appLink = "https://script.google.com/macros/s/AKfycbx8-5IhL3yV64YXoji8IzKdzdawh5NRXVqZt9ghinvSmfFKjUtjL8xG-dyzR7l4217OOQ/exec";
    
       // Сообщение при успешной отправке данных
-      let successRespond = 'Сообщение успешно отправлено. Посмотрите результат <a target="_blank" href="https://docs.google.com/spreadsheets/d/1XcTivCQL4EZJf1x2kB4UwGj5bAi0sfpx1PwtaKgOWHo/edit?usp=sharing">тут</a>';
+      let successRespond = 'Сообщение успешно отправлено.';
    
       // Сообщение при ошибке в отправке данных
       let errorRespond = 'Не удалось отправить сообщение. Cвяжитесь с администратором сайта по адресу <a href="mailto:smart-landing@ya.ru">smart-landing@ya.ru</a>';
@@ -69,7 +69,7 @@ $(function() {
       preloader.css('opacity', '0');
    
       // Выводим ответ формы.
-      formRespond.html(successRespond).css('color', '#37b599');
+      formRespond.html(successRespond).css('color', '#0a0c6c');
        
       // Возвращаем активность кнопке отправки
       submitButton.prop('disabled', false);
