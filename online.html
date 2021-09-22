@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,7 +65,7 @@
             <div class="block__third-container">
                 <h2 class="about">Занятия онлайн</h2>
         
-             <p class='text__online'>Еще пару лет назад до 2019, йога онлайн мне казалась чем-то невозможным. Мне казалось, что такие занятия не дают ощущение личного  присутствия, правильного выполнения упражнений, обратной связи.</p>
+             <p class='text__online'><img class="image__float" src="images/online-pic.jpg" style="float: right;">Еще пару лет назад до 2019, йога онлайн мне казалась чем-то невозможным.  Мне казалось, что такие занятия не дают ощущение личного  присутствия, правильного выполнения упражнений, обратной связи.</p>
                 <p class='text__online'>Но время карантина (а мы находились на нем в течение 2 месяцев, не выходя из дома) полностью перевернули мое представление о таком способе занятий и общении. </p>
                 
                 <p class='text__online'>И  успех занятий и мероприятий онлайн - это  прямое доказательство тому, что мы - это не только наше тело. Мы - гораздо больше. Мы способны чувствовать присутствие друг друга в виртуальном пространстве, шутить, сопереживать, радоваться вместе и чувствовать себя единым целом. И это удивительно!</p>
@@ -84,7 +85,45 @@
                 <p class='text__online'>Уделив время от 30 до 60 мин в день на практику со мной, вы гораздо качественней и эффективнее проведете все остальные 23 часа в сутки.
                 У вас будет больше энергии, улучшится сон и качество отдыха, вы укрепите свое тело и успокоите ум.
                 </p>
-        
+                <div class="block__third-container">
+                  <h2 class="about">Абонемент "Йога онлайн со Светой Ли"</h2>
+                  
+                                        <p class="text__online"><img class="image__float-left" src="images/abonement.jpg" style="float: left;" alt="pic">
+                      Занятия онлайн проходят в закрытом аккаунте инстаграмм. Там уже около 500(!) разнообразных занятий!</p>
+                      <p class="text__online">Что нужно, чтобы получить доступ к ним и к новым занятиям?</p>
+                      <p class="text__online">Нужно оставить заявку, выбрать и оплатить тариф, получить доступ к закрытому аккаунту инстаграм и желание заниматься!</p>
+                      <p class="text__online">Вы можете заниматься с любого устройства, с которой сможете зайти в инстаграм.</p>
+
+
+                      <p class="text__online">В абонементе вас ждет каждый эфир новое занятие.
+Все занятия отличаются по стилю и нагрузке. Все эфиры сохраняются и в свободные от эфиров дни вы сможете заниматься самостоятельно, а также повторять понравившиеся занятия в любое время.</p>
+
+<p class="text__online">Каждую неделю:<br>
+
+- занятие по пранаямам (дыхательные практики),<br>
+-	интенсивное занятие (силовая йога/кардио нарузка) - вам придется попотеть,<br>
+-	общеукрепляющие комплексы (укрепление кора, ног, рук, суставные гимнастики),<br>
+-	комплексы на глубокое расслабление, снятие напряжения и проработку суставов и фасций - инь йога, <br>
+-	динамичные флоу,<br>
+-	каждое занятие заканчивается глубоким расслаблением и за ним следует короткая медитация.<br></p>
+
+⠀
+<p class="text__online">Каждый месяц читаем новые вдохновляющие книги.<br>
+
+- Устраиваем бьюти встречи (йога для лица, самомассаж и упражнения для осанки).<br>
+
+- А так же вас ждет приятная компания единомышленников, с которой легко и приятно развиваться и общаться.<br>
+
+- Видеоконференции с общением.<br>
+
+По сути вы приобретаете членство в клубе, где вы не только улучшаете свое физическое здоровье , но и развиваетесь как личность.
+ </p>
+
+          </div>
+                  </div>
+               
+          
+                </div>
               </div>
               <div class="sales__wrapper">
                 <h2 class="about">Пакеты занятий</h2>
@@ -101,6 +140,7 @@
                       <li class="price__text">инь йога</li>
                       <li class="price__text">йога нидра</li>
                       <li class="price__text">медитации</li>
+                      <li class="price__text">неограниченный доступ к более 500 занятиям в записи</li>
                     </ul>
                   </div>
                   <div class="price__item">
@@ -115,6 +155,7 @@
                     <li class="price__text">инь йога</li>
                     <li class="price__text">йога нидра</li>
                     <li class="price__text">медитации</li>
+                    <li class="price__text">неограниченный доступ к более 500 занятиям в записи</li>
                   </ul>
                   </div>
                   <div class="price__item">
@@ -129,10 +170,61 @@
                     <li class="price__text">инь йога</li>
                     <li class="price__text">йога нидра</li>
                     <li class="price__text">медитации</li>
+                    <li class="price__text">неограниченный доступ к более 500 занятиям в записи</li>
                   </ul>
                   </div>
                 </div>
               </div>
+              <form class="g-form" id="g-form-1" method="POST" action="" autocomplete="off">
+                <h2 class="g-form__title g-form__title_main about">Отправьте заявку на онлайн-курс</h2>
+                <h2 class="g-form__title g-form__title_respond"></h2>
+                <div class="g-form__preloader"></div>
+                <div class="g-form__inputs">
+                    <div class="g-form__container">
+                        
+                  <fieldset class="g-form__input-wrapper">
+                    <div class="input__text">Как Вас зовут</div>
+                    <input class="g-form__input g-form__input_name" id="name" name="Имя" placeholder="Введите ваше имя" required>
+                  </fieldset>
+               <div class="tel-email__wrapper">
+                  <fieldset class="g-form__input-wrapper">
+                    <div class="input__text">Номер телефона</div>
+                    <input class="g-form__input g-form__input_tel" id="tel" type="tel" name="Телефон" placeholder="+ ___ (__) ___ - __ - __">
+                  </fieldset>
+               
+                  <fieldset class="g-form__input-wrapper">
+                    <div class="input__text">Электронная почта</div>
+                    <input id="email" name="Email" type="email" value=""
+                    required placeholder="Введите ваш email"/>
+                  </fieldset>
+               </div>
+                  <fieldset class="g-form__input-wrapper">
+                    <div class="input__text">Ник в Инстаграме*</div>
+                    <input id="nickinstagram" name="nickinstagram"  value=""
+                    required placeholder="Введите ваш Ник в Инстаграме"/>
+                  </fieldset>
+                  
+                  <fieldset class="g-form__input-wrapper">
+                    <div class="input__text">Ваше сообщение</div>
+                    <textarea id="message" name="Сообщение" rows="5"
+                    placeholder="Введите сообщение"></textarea>
+                  </fieldset>
+               
+                  <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+                  <label for="honeypot">  <!-- Помогает бороться со спамом. Должно быть пустым! --></label>
+                    <input id="honeypot" type="text" name="honeypot" value="">
+                  </fieldset>
+               
+                  <div class="g-form__button-wrapper">
+                    <button class="g-form__button">Отправить заявку</button>
+                  </div>
+                  <div class="input__text-mark">*Онлайн-занятия проходят в закрытом канале Инстаграм, поэтому для участия необходимо иметь аккаунт в Инстаграм</div>
+                </div>
+                <img class='image__about' style="width: 50%;" src="images/form.jpg" alt="pic">
+                </div>
+              </form>
+              <script src="g-form.js"></script>
+
               <div class="footer__wrapper">
                 <footer class="footer__container">
                   <div class="social">
@@ -155,8 +247,8 @@
                         <a href="kontacts.html" class="nav-footer">Контакты</a>
                     </li>
                     </ul>
-                  <div class="rights">&#169 Yoga with Sveta Lee</div>
-                </footer>
+                    <div class="rights">&#169 Yoga with Sveta Lee<br><a class='mail-to' href='mailto:sveta@gmail.com'>sveta@gmail.com</a></div>
+                  </footer>
               </div>
                 <script src="script.js"></script>
 </body>

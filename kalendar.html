@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,6 +64,11 @@
         <div class="title__screen-online"></div>
               
               </div>
+        <div class="block__third-container">
+              <h2 class="about">Расписание занятий</h2>
+              <div class="calendar__wrapper">
+                <iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=tknp1vf7vob18oc28dm1jjn6r4%40group.calendar.google.com&ctz=Europe%2FMinsk" style="border: 0" width="1200" height="600" frameborder="0" scrolling="no"></iframe>       </div>
+            </div>
               <div class="sales__wrapper">
                 <h2 class="about">Пакеты занятий</h2>
                 <div class="sales__price">
@@ -78,6 +84,7 @@
                       <li class="price__text">инь йога</li>
                       <li class="price__text">йога нидра</li>
                       <li class="price__text">медитации</li>
+                      <li class="price__text">неограниченный доступ к более 500 занятиям в записи</li>
                     </ul>
                   </div>
                   <div class="price__item">
@@ -92,6 +99,7 @@
                     <li class="price__text">инь йога</li>
                     <li class="price__text">йога нидра</li>
                     <li class="price__text">медитации</li>
+                    <li class="price__text">неограниченный доступ к более 500 занятиям в записи</li>
                   </ul>
                   </div>
                   <div class="price__item">
@@ -106,10 +114,62 @@
                     <li class="price__text">инь йога</li>
                     <li class="price__text">йога нидра</li>
                     <li class="price__text">медитации</li>
+                    <li class="price__text">неограниченный доступ к более 500 занятиям в записи</li>
                   </ul>
                   </div>
                 </div>
               </div>
+
+              <form class="g-form" id="g-form-1" method="POST" action="" autocomplete="off">
+                <h2 class="g-form__title g-form__title_main about">Отправьте заявку на онлайн-курс</h2>
+                <h2 class="g-form__title g-form__title_respond"></h2>
+                <div class="g-form__preloader"></div>
+                <div class="g-form__inputs">
+                    <div class="g-form__container">
+                        
+                  <fieldset class="g-form__input-wrapper">
+                    <div class="input__text">Как Вас зовут</div>
+                    <input class="g-form__input g-form__input_name" id="name" name="Имя" placeholder="Введите ваше имя" required>
+                  </fieldset>
+               <div class="tel-email__wrapper">
+                  <fieldset class="g-form__input-wrapper">
+                    <div class="input__text">Номер телефона</div>
+                    <input class="g-form__input g-form__input_tel" id="tel" type="tel" name="Телефон" placeholder="+ ___ (__) ___ - __ - __">
+                  </fieldset>
+               
+                  <fieldset class="g-form__input-wrapper">
+                    <div class="input__text">Электронная почта</div>
+                    <input id="email" name="Email" type="email" value=""
+                    required placeholder="Введите ваш email"/>
+                  </fieldset>
+               </div>
+                  <fieldset class="g-form__input-wrapper">
+                    <div class="input__text">Ник в Инстаграме*</div>
+                    <input id="nickinstagram" name="nickinstagram"  value=""
+                    required placeholder="Введите ваш Ник в Инстаграме"/>
+                  </fieldset>
+                  
+                  <fieldset class="g-form__input-wrapper">
+                    <div class="input__text">Ваше сообщение</div>
+                    <textarea id="message" name="Сообщение" rows="5"
+                    placeholder="Введите сообщение"></textarea>
+                  </fieldset>
+               
+                  <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+                  <label for="honeypot">  <!-- Помогает бороться со спамом. Должно быть пустым! --></label>
+                    <input id="honeypot" type="text" name="honeypot" value="">
+                  </fieldset>
+               
+                  <div class="g-form__button-wrapper">
+                    <button class="g-form__button">Отправить заявку</button>
+                  </div>
+                  <div class="input__text-mark">*Онлайн-занятия проходят в закрытом канале Инстаграм, поэтому для участия необходимо иметь аккаунт в Инстаграм</div>
+                </div>
+                <img class='image__about' style="width: 50%;" src="images/form.jpg" alt="pic">
+                </div>
+              </form>
+              <script src="g-form.js"></script>
+
               <div class="footer__wrapper">
                 <footer class="footer__container">
                   <div class="social">
@@ -132,8 +192,8 @@
                         <a href="kontacts.html" class="nav-footer">Контакты</a>
                     </li>
                     </ul>
-                  <div class="rights">&#169 Yoga with Sveta Lee</div>
-                </footer>
+                    <div class="rights">&#169 Yoga with Sveta Lee<br><a class='mail-to' href='mailto:sveta@gmail.com'>sveta@gmail.com</a></div>
+                  </footer>
               </div>
                 <script src="script.js"></script>
 </body>

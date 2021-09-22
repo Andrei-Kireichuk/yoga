@@ -106,6 +106,7 @@ p {
   text-align: justify;
   max-width: 1200px;
   margin: 0 auto;
+  color: dimgray;
 }
 
 .header {
@@ -256,12 +257,14 @@ a {
 }
 
 .btn {
-  border: dimgray 1px solid;
+  border: none;
   border-radius: 6px;
   padding: 5px;
+  cursor: pointer;
+  background-color: #feb155;
 }
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #facb92;
 }
 
 @media only screen and (max-width: 768px) {
@@ -390,6 +393,17 @@ a {
   margin: 80px auto 0;
 }
 
+.calendar__wrapper {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  margin: 80px auto 0;
+}
+
+.calendar {
+  margin: 0 auto;
+}
+
 .text__wrapper {
   width: 50%;
 }
@@ -422,7 +436,7 @@ a {
 .sales__price {
   display: flex;
   max-width: 1200px;
-  height: 600px;
+  height: 660px;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -559,6 +573,19 @@ a {
   border-radius: 32px;
   height: 410px;
 }
+.image__float {
+  width: 600px;
+  border-radius: 32px;
+  margin: 0 0 30px 30px;
+  height: 410px;
+}
+
+.image__float-left {
+  width: 600px;
+  border-radius: 32px;
+  margin: 0 30px 30px 0;
+}
+
 .image__about-form {
   width: 100%;
   border-radius: 32px;
@@ -618,10 +645,29 @@ a {
   width: 80%;
   padding-left: 15px;
 }
+.g-form__button-wrapper {
+  margin: 40px auto 40px;
+}
+
+.g-form__button {
+  width: 149px;
+  height: 45px;
+  left: 1257px;
+  top: 22px;
+  background: #feb155;
+  border-radius: 10px;
+  cursor: pointer;
+}
 .input__text {
   font-size: 16px;
   color: dimgray;
 }
+
+.input__text-mark {
+  font-size: 14px;
+  color: dimgray;
+}
+
 #tel {
   width: 100%;
   padding-left: 15px;
@@ -655,9 +701,6 @@ textarea {
   width: 80%;
 }
 
-.g-form__button {
-}
-
 .footer__wrapper {
   width: 100%;
   background-color: #eaf4fe;
@@ -669,6 +712,14 @@ textarea {
   font-size: 16px;
   color: #0a0c6c;
   margin-top: -4px;
+}
+
+.mail-to {
+  font-size: 16px;
+  color: #0a0c6c;
+}
+.mail-to:hover {
+  border-bottom: #0a0c6c 1px solid;
 }
 
 .nav-active {
