@@ -36,7 +36,7 @@ h2 {
 }
 
 p {
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 2vw, 18px);
   font-weight: 400;
   line-height: 33px;
 }
@@ -343,10 +343,15 @@ a {
   opacity: 0.4;
 }
 .about__wrapper {
-  margin-top: 80px;
   display: flex;
   max-width: 1200px;
   justify-content: space-between;
+  margin: 80px auto 0;
+}
+.about__wrapper-float {
+  display: block;
+  max-width: 1200px;
+
   margin: 80px auto 0;
 }
 
@@ -445,6 +450,7 @@ a {
 }
 .text__img {
   width: 50%;
+  object-fit: contain;
 }
 
 .anchor__top {
@@ -467,10 +473,11 @@ a {
   font-weight: 600;
   font-size: 42px;
   line-height: 48px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   /* identical to box height, or 143% */
   letter-spacing: 0;
   font-family: "Lato", sans-serif;
+
   /* text */
 
   color: #21252c;
@@ -514,9 +521,7 @@ a {
   min-height: 850px;
 }
 .text__about {
-  width: 50%;
-  margin: 20px 0 0 30px;
-  padding-left: 30px;
+  margin: 20px auto 0;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
@@ -527,20 +532,24 @@ a {
 }
 .image__about {
   width: 100%;
-  border-radius: 32px;
-  height: 410px;
+  height: auto;
 }
 .image__float {
   width: 600px;
-  border-radius: 32px;
   margin: 0 0 30px 30px;
-  height: 410px;
+  height: auto;
 }
 
 .image__float-left {
   width: 600px;
   border-radius: 32px;
   margin: 0 30px 30px 0;
+}
+
+.image__float-about {
+  float: left;
+  width: 50%;
+  margin-right: 2.5vw;
 }
 
 .image__about-form {
@@ -788,14 +797,41 @@ textarea {
   display: flex;
 }
 
+@media screen and (max-width: 1440px) {
+  .about__wrapper {
+    margin: 80px 9vw 0;
+  }
+  .about__wrapper-float {
+    max-width: 1200px;
+    margin: 80px 9vw 0;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   h1 {
     font-size: 64px;
     padding-top: 40px;
   }
+  h2 {
+    font-size: 36px;
+  }
+  .bigchapter {
+    font-size: 36px;
+  }
+  .about__wrapper,
+  .about__wrapper-float {
+    margin: 80px 5vw 0;
+  }
+
   .title__screen {
     background-position-x: 45%;
     background-size: cover;
+    background-position-y: bottom;
+  }
+  .image__about {
+    width: 100%;
+
+    height: auto;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -847,16 +883,7 @@ textarea {
     max-width: 360px;
   }
 }
-@media screen and (max-width: 700px) {
-  .title__screen {
-    /* height: 100vmin;
-    background-size: auto 100vmin; */
-  }
 
-  h1 {
-    /* font-size: 7vw; */
-  }
-}
 @media screen and (max-width: 508px) {
   .nav-logo {
     display: none;
@@ -864,11 +891,11 @@ textarea {
   .hamburger {
     padding-left: 30px;
   }
-  .title__screen {
-  }
+
   h1 {
     font-size: 48px;
     max-width: 300px;
+    line-height: 78px;
   }
   .social__icon {
     width: 25px;
