@@ -97,7 +97,7 @@ p {
 
 .title__screen-online {
   width: 100%;
-  height: 400px;
+  height: 30vw;
   object-fit: cover;
   background-image: url(./images/2holl.JPG);
   background-position-x: center;
@@ -1017,6 +1017,9 @@ textarea {
     max-width: 300px;
     line-height: 78px;
   }
+  h2 {
+    font-size: 32px;
+  }
   .social__icon {
     width: 25px;
   }
@@ -1038,8 +1041,36 @@ textarea {
   }
   .image__float-right {
     float: none !important;
-    width: 105vw;
+    width: 110vw;
     margin-left: -5vw;
     margin-bottom: 5vw;
+  }
+  .image__corporate {
+    display: inline;
+    width: 110vw;
+    float: none !important;
+    margin-left: -5vw;
+    margin-right: -5vw;
+    margin-bottom: 20px !important;
+  }
+  .about__wrapper,
+  .about__wrapper-float {
+    margin: 50px 5vw 0;
+  }
+  .about {
+    margin: 50px auto;
+  }
+  .test__unit-wrapper {
+    flex-direction: column;
+  }
+  .wideoframe {
+    width: 100% !important;
+    height: 200px;
+    margin-bottom: 40px;
+  }
+  .test__unit-block {
+    width: 100%;
+    padding-left: 2.5vw;
+    margin-left: 2.5vw;
   }
 }
