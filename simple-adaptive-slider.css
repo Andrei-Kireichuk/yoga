@@ -127,3 +127,15 @@
 .slider__indicator_active {
   background-color: #fff;
 }
+@media screen and (max-width: 508px) {
+  .slider {
+    width: 90vw;
+    height: 420px;
+  }
+  .slider__wrapper {
+    height: 410px;
+  }
+  .avatar__text {
+    font-size: 16px;
+  }
+}

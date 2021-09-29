@@ -423,6 +423,7 @@ a {
   margin-top: 20px;
   text-align: center;
   font-size: 24px;
+  color: #707070;
 }
 
 .price__text {
@@ -430,11 +431,12 @@ a {
   list-style-type: circle;
   font-size: clamp(16px, 2vw, 20px);
   text-align: start;
+  color: #707070;
 }
 
 .price__item {
   background: #eaf4fe;
-  border-radius: 32px;
+  border-radius: 8px;
   padding: 45px;
   width: 345px;
   transition: 0.3s;
@@ -442,8 +444,8 @@ a {
 
 .price__item:hover {
   transform: scale(1.05);
-  color: #fff;
-  background-color: #eda477;
+  /* color: #fff; */
+  /* background-color: #eda477; */
   font-size: 22px;
   transition: 0.3s;
 }
@@ -563,6 +565,7 @@ a {
   width: 600px;
   margin: 0 0 30px 30px;
   height: auto;
+  float: right;
 }
 
 .image__float-left {
@@ -607,11 +610,13 @@ a {
 .g-form__inputs {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto 120px;
   padding: 64px;
-  border: 1px solid dimgray;
-  border-radius: 36px;
+  /* border: 1px solid dimgray; */
+  border-radius: 8px;
+  background-color: #eaf4fe;
+  align-items: center;
 }
 
 .g-form__title_respond {
@@ -638,32 +643,38 @@ a {
 
 .g-form__input {
   height: 40px;
-  border-radius: 25px;
+  border-radius: 8px;
   border: 1px solid rgba(105, 105, 105, 0.205);
   width: 80%;
   padding-left: 15px;
+  margin-bottom: 20px;
 }
 .g-form__button-wrapper {
   margin: 40px auto 40px;
 }
 
 .g-form__button {
-  width: 149px;
+  width: 220px;
   height: 45px;
   left: 1257px;
   top: 22px;
-  background: #eaf4fe;
+  background: #ffffff;
   border-radius: 10px;
   cursor: pointer;
+  border: #dddddd 1px solid;
+  color: dimgray;
+  font-size: 18px;
 }
 .input__text {
   font-size: 16px;
   color: dimgray;
+  margin-bottom: 10px;
 }
 
 .input__text-mark {
   font-size: 14px;
   color: dimgray;
+  padding-right: 30px;
 }
 
 #tel {
@@ -675,21 +686,22 @@ a {
 #email {
   height: 40px;
   padding-left: 15px;
-  border-radius: 25px;
+  border-radius: 8px;
   /* width: 80%; */
   border: 1px solid rgba(105, 105, 105, 0.205);
 }
 #nickinstagram {
   padding-left: 15px;
   height: 40px;
-  border-radius: 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
   width: 80%;
   border: 1px solid rgba(105, 105, 105, 0.205);
 }
 #message {
   padding-left: 15px;
   padding-top: 15px;
-  border-radius: 20px;
+  border-radius: 8px;
   font-size: 14px;
   border: 1px solid rgba(105, 105, 105, 0.205);
 }
@@ -697,6 +709,11 @@ a {
 textarea {
   resize: none;
   width: 80%;
+}
+
+.form__picture {
+  width: 50%;
+  object-fit: contain;
 }
 
 .footer__wrapper {
@@ -874,6 +891,20 @@ textarea {
     width: 23vw;
     transition: 0.3s;
   }
+  .g-form__inputs {
+    margin: 0 9vw 120px;
+    padding: 5vw;
+  }
+  .text__online-wrapper {
+    margin: 0 9vw;
+  }
+  .image__float {
+    width: 50%;
+  }
+  .image__online-left {
+    width: 50%;
+    margin: 0 2.5vw 30px 0;
+  }
 }
 @media screen and (max-width: 1240px) {
   .text__img-review {
@@ -897,6 +928,31 @@ textarea {
     margin-top: 40px;
     margin-bottom: 40px;
   }
+  .form__picture {
+    display: none;
+  }
+  .g-form__input {
+    width: 100%;
+  }
+  .g-form__container {
+    width: 100%;
+  }
+  .tel-email__wrapper {
+    width: 100%;
+  }
+  #tel {
+    width: 250px;
+  }
+
+  #email {
+    width: 250px;
+  }
+  #nickinstagram {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -915,6 +971,9 @@ textarea {
   .about__wrapper,
   .about__wrapper-float {
     margin: 80px 5vw 0;
+  }
+  .text__online-wrapper {
+    margin: 0 5vw;
   }
 
   .title__screen {
@@ -1002,6 +1061,13 @@ textarea {
   .price__item {
     width: 315px;
   }
+  #tel {
+    width: 100%;
+  }
+
+  #email {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 508px) {
@@ -1010,6 +1076,12 @@ textarea {
   }
   .hamburger {
     padding-left: 30px;
+  }
+  .image__online-left {
+    float: none;
+    width: 110vw;
+    margin-right: -5vw;
+    margin-left: -5vw;
   }
 
   h1 {
@@ -1022,6 +1094,11 @@ textarea {
   }
   .social__icon {
     width: 25px;
+  }
+  .image__float {
+    float: none;
+    width: 115%;
+    margin: 0 -5vw;
   }
   .nav__footer-menu {
     display: flex;
@@ -1042,7 +1119,7 @@ textarea {
   .image__float-right {
     float: none !important;
     width: 110vw;
-    margin-left: -5vw;
+    margin-left: -8vw;
     margin-bottom: 5vw;
   }
   .image__corporate {
@@ -1052,6 +1129,7 @@ textarea {
     margin-left: -5vw;
     margin-right: -5vw;
     margin-bottom: 20px !important;
+    height: 70vw;
   }
   .about__wrapper,
   .about__wrapper-float {
@@ -1072,5 +1150,16 @@ textarea {
     width: 100%;
     padding-left: 2.5vw;
     margin-left: 2.5vw;
+  }
+  .tel-email__wrapper {
+    display: inline;
+  }
+  .g-form__inputs {
+    margin: 0 10px 40px;
+    padding: 2.5vw;
+  }
+  .g-form__button-wrapper {
+    margin: 40px auto 40px;
+    width: 220px;
   }
 }
