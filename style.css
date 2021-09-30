@@ -1040,8 +1040,18 @@ textarea {
   .nav-item {
     margin: 2.5rem 0;
   }
+  .nav__footer-menu {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+  }
   .nav-item__footer {
     margin: 0;
+    padding-top: 15px;
+    padding-left: 0;
+  }
+  .footer__wrapper {
+    height: 380px;
   }
 
   .hamburger {
@@ -1106,7 +1116,7 @@ textarea {
     flex-direction: column;
   }
   .footer__wrapper {
-    height: 280px;
+    height: 380px;
   }
   .nav-item__footer {
     padding-bottom: 10px;
@@ -1162,5 +1172,11 @@ textarea {
   .g-form__button-wrapper {
     margin: 40px auto 40px;
     width: 220px;
+  }
+  .input__text-mark {
+    padding-right: 10px;
+  }
+  #email {
+    margin-bottom: 10px;
   }
 }
