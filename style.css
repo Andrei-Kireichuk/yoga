@@ -7,9 +7,6 @@
 
 body {
   background-color: rgb(255, 255, 255);
-  /*background-image: url(images/3.JPG);
-  background-repeat: no-repeat;
-  background-size: cover;*/
 }
 
 .arrow {
@@ -981,6 +978,7 @@ textarea {
     background-position-x: 45%;
     background-size: cover;
     background-position-y: bottom;
+    min-height: 640px;
   }
   .image__about {
     width: 100%;
@@ -1016,7 +1014,6 @@ textarea {
     flex-direction: column;
     background-color: #fff;
     width: 100vw;
-    border-radius: 10px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
@@ -1038,7 +1035,7 @@ textarea {
   }
 
   .nav-item {
-    margin: 2.5rem 0;
+    margin: 1.5rem 0;
   }
   .nav__footer-menu {
     padding-top: 15px;
@@ -1059,15 +1056,11 @@ textarea {
     cursor: pointer;
     padding-left: 150px;
   }
-  .title__screen {
-    background-position-x: center;
-    background-image: url(images/title-mobile.jpg);
-  }
+
   h1 {
     font-size: 64px;
     padding-top: 9vh;
     margin: 0 auto;
-    max-width: 360px;
   }
   .price__item {
     width: 315px;
@@ -1080,7 +1073,15 @@ textarea {
     width: 100%;
   }
 }
-
+@media screen and (max-width: 639px) {
+  .title__screen {
+    background-position-x: center;
+    background-image: url(images/title-mobile.jpg);
+  }
+  h1 {
+    max-width: 360px;
+  }
+}
 @media screen and (max-width: 508px) {
   .nav-logo {
     display: none;
