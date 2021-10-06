@@ -847,6 +847,11 @@ textarea {
 .swiper__wrapper {
   width: 50%;
 }
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: #0a0c6c;
+  }
+}
 
 @media screen and (max-width: 1440px) {
   .about__wrapper {
