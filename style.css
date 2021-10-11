@@ -1,3 +1,11 @@
+h1 {
+  text-align: center;
+  padding: 60px 0 0 0;
+  font-family: "Over the Rainbow";
+  font-size: 80px;
+  color: #0a0c6c;
+  text-shadow: 5px 5px 10px rgb(77, 54, 33);
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +19,6 @@ body {
 
 .arrow {
   width: 30px;
-}
-h1 {
-  text-align: center;
-  padding: 60px 0 0 0;
-  font-family: "Over the Rainbow";
-  font-size: 80px;
-  color: #0a0c6c;
-  text-shadow: 5px 5px 10px rgb(77, 54, 33);
 }
 
 h2 {
@@ -656,13 +656,27 @@ a {
   height: 45px;
   left: 1257px;
   top: 22px;
-  background: #ffffff;
+  background: #0a0c6c;
   border-radius: 10px;
   cursor: pointer;
-  border: #dddddd 1px solid;
-  color: dimgray;
-  font-size: 18px;
+  border: none !important;
+  color: #ffffff;
+  font-size: 17px;
 }
+
+.g-form__button:hover {
+  background: #0b1973;
+  background: -moz-linear-gradient(top, #0b1973 0%, #3a49a8 21%, #0b1973 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #0b1973 0%,
+    #3a49a8 21%,
+    #0b1973 100%
+  );
+  background: linear-gradient(to bottom, #0b1973 0%, #3a49a8 21%, #0b1973 100%);
+  transition: 0.3s;
+}
+
 .input__text {
   font-size: 16px;
   color: dimgray;
@@ -847,6 +861,7 @@ textarea {
 .swiper__wrapper {
   width: 50%;
 }
+
 @media (prefers-color-scheme: dark) {
   h1 {
     color: #0a0c6c;
