@@ -708,8 +708,7 @@ a {
   border-radius: 8px;
   margin-bottom: 20px;
   width: 80%;
-  border: 1px solid rgba(105, 105, 105, 0.205);
-  border-top: 1px !important;
+  border: 1px solid rgba(105, 105, 105, 0.205) !important;
 }
 #message {
   padding-left: 15px;
