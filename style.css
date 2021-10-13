@@ -708,7 +708,7 @@ a {
   border-radius: 8px;
   margin-bottom: 20px;
   width: 80%;
-  border: 1px solid rgba(105, 105, 105, 0.205) !important;
+  border: 1px solid rgba(105, 105, 105, 0.205);
 }
 #message {
   padding-left: 15px;
@@ -983,6 +983,9 @@ textarea {
   h1 {
     font-size: 64px;
     padding-top: 40px;
+  }
+  .social__icon {
+    width: 25px;
   }
   h2 {
     font-size: 36px;
