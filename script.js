@@ -57,4 +57,47 @@ function hide () {
 
 }
 
+var noSelect = document.getElementById('noselect');
+var selectOne = document.getElementById('select-one');
+var selectTwo = document.getElementById('select-two');
+var selectThree = document.getElementById('select-three');
+function offerOne(){
+  noSelect.removeAttribute("selected");
+  selectTwo.removeAttribute("selected");
+  selectThree.removeAttribute("selected");
+  selectOne.setAttribute("selected","");
+  var buttonOne = document.getElementById('button__1');
+  var buttonTwo = document.getElementById('button__2');
+  var buttonThree = document.getElementById('button__3');
+  buttonOne.innerHTML = "Выбрано";
+  buttonTwo.innerHTML = "Выбрать";
+  buttonThree.innerHTML = "Выбрать";
+}
 
+function offerTwo(){
+
+  noSelect.removeAttribute("selected");
+  selectOne.removeAttribute("selected");
+  selectThree.removeAttribute("selected");
+  selectTwo.setAttribute("selected","");
+  var buttonOne = document.getElementById('button__1');
+  var buttonTwo = document.getElementById('button__2');
+  var buttonThree = document.getElementById('button__3');
+  buttonOne.innerHTML = "Выбрать";
+  buttonTwo.innerHTML = "Выбрано";
+  buttonThree.innerHTML = "Выбрать";
+}
+
+function offerThree(){
+
+  noSelect.removeAttribute("selected");
+  selectThree.setAttribute("selected","");
+  selectTwo.removeAttribute("selected");
+  selectOne.removeAttribute("selected");
+  var buttonOne = document.getElementById('button__1');
+  var buttonTwo = document.getElementById('button__2');
+  var buttonThree = document.getElementById('button__3');
+  buttonOne.innerHTML = "Выбрать";
+  buttonTwo.innerHTML = "Выбрать";
+  buttonThree.innerHTML = "Выбрано";
+}
