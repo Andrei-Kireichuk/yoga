@@ -608,10 +608,24 @@ a {
   flex-direction: column;
   justify-content: start;
 }
+.buttonborder {
+  border: #3474db 3px solid;
+}
 
 .g-form__input-wrapper_hidden {
   display: none;
   overflow: hidden;
+}
+
+#offer {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid rgba(105, 105, 105, 0.205);
+  width: 80%;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  color: dimgray;
 }
 
 .g-form__inputs {

@@ -55,7 +55,7 @@ function hide () {
   readmore.style.display = "inline";
   
 
-}
+};
 
 var noSelect = document.getElementById('noselect');
 var selectOne = document.getElementById('select-one');
@@ -65,33 +65,33 @@ function offerOne(){
   noSelect.removeAttribute("selected");
   selectTwo.removeAttribute("selected");
   selectThree.removeAttribute("selected");
-  selectOne.setAttribute("selected","");
+  selectOne.setAttribute("selected","true");
   var buttonOne = document.getElementById('button__1');
   var buttonTwo = document.getElementById('button__2');
   var buttonThree = document.getElementById('button__3');
   buttonOne.innerHTML = "Выбрано";
   buttonTwo.innerHTML = "Выбрать";
   buttonThree.innerHTML = "Выбрать";
-}
+};
 
 function offerTwo(){
 
   noSelect.removeAttribute("selected");
   selectOne.removeAttribute("selected");
   selectThree.removeAttribute("selected");
-  selectTwo.setAttribute("selected","");
+  selectTwo.setAttribute("selected","true");
   var buttonOne = document.getElementById('button__1');
   var buttonTwo = document.getElementById('button__2');
   var buttonThree = document.getElementById('button__3');
   buttonOne.innerHTML = "Выбрать";
   buttonTwo.innerHTML = "Выбрано";
   buttonThree.innerHTML = "Выбрать";
-}
+};
 
 function offerThree(){
 
   noSelect.removeAttribute("selected");
-  selectThree.setAttribute("selected","");
+  selectThree.setAttribute("selected","true");
   selectTwo.removeAttribute("selected");
   selectOne.removeAttribute("selected");
   var buttonOne = document.getElementById('button__1');
