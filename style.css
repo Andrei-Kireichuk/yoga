@@ -565,6 +565,7 @@ a {
   line-height: 142%;
   /* or 26px */
   color: #707070;
+  overflow: hidden;
 }
 .image__about {
   width: 100%;
