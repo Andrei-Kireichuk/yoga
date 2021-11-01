@@ -400,7 +400,6 @@ a {
 }
 .text__width {
   margin: 0 auto;
-
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
@@ -655,9 +654,10 @@ a {
 }
 
 .g-form__title_respond {
-  color: #0a0c6c !important;
+  color: #000000 !important;
   margin: 0 auto;
   text-align: center;
+  margin: 80px auto;
 }
 
 .g-form__input-wrapper {
