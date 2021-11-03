@@ -578,6 +578,19 @@ a {
     background-attachment: scroll;
   }
 }
+#v-shot {
+  width: 100%;
+  top: -25%;
+  position: absolute;
+}
+
+.container-4 {
+  margin-top: 30vh;
+  overflow: hidden;
+  height: 80vh;
+  width: 100vw;
+  position: relative;
+}
 
 .text__about {
   margin: 20px auto 0;

@@ -101,3 +101,15 @@ function offerThree(){
   buttonTwo.innerHTML = "Выбрать";
   buttonThree.innerHTML = "Выбрано";
 }
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.from("#v-shot",{y:-1050, 
+  scrollTrigger:{
+      trigger:".container-4",
+      start:"top bottom",
+      end:"bottom top",
+      scrub:0,
+      id:"L4",
+      //markers: true,
+      ease: "none"
+}});
