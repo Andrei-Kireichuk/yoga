@@ -16,6 +16,10 @@ h1 {
 body {
   background-color: rgb(255, 255, 255);
 }
+body,
+html {
+  height: 100%;
+}
 
 .arrow {
   width: 30px;
@@ -45,7 +49,6 @@ p {
 
 .slider__item {
   padding-right: 60px;
-  /* margin-right: 30px; */
 }
 
 .avatar__wrapper {
@@ -67,8 +70,6 @@ p {
   font-size: 18px;
   line-height: 142%;
   padding-left: 20px;
-  /* identical to box height, or 23px */
-
   color: #343434;
 }
 .avatar__text {
@@ -77,7 +78,6 @@ p {
   font-weight: normal;
   font-size: 18px;
   line-height: 142%;
-  /* or 23px */
   padding-top: 30px;
   color: #707070;
 }
@@ -327,6 +327,10 @@ a {
   margin-top: 180px;
 }
 
+.parallax-top {
+  padding-bottom: 160px;
+}
+
 .about {
   text-align: center;
   margin: 120px auto;
@@ -395,7 +399,6 @@ a {
   font-weight: normal;
   font-size: clamp(16px, 2vw, 20px);
   line-height: 33px;
-  /* or 26px */
   color: #707070;
 }
 .text__width {
@@ -405,7 +408,6 @@ a {
   font-weight: normal;
   font-size: clamp(16px, 2vw, 20px);
   line-height: 33px;
-  /* or 26px */
   color: #707070;
 }
 .text__width-right {
@@ -417,14 +419,12 @@ a {
   font-weight: normal;
   font-size: clamp(16px, 2vw, 20px);
   line-height: 33px;
-  /* or 26px */
   color: #707070;
 }
 
 .sales__price {
   display: flex;
   max-width: 1200px;
-  /* height: 660px; */
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -455,9 +455,6 @@ a {
 }
 
 .price__item:hover {
-  /* transform: scale(1.05); */
-  /* color: #fff; */
-  /* background-color: #eda477; */
   font-size: 22px;
   transition: 0.3s;
 }
@@ -497,7 +494,6 @@ a {
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
-  /* identical to box height */
   color: #414a58;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -509,12 +505,8 @@ a {
   font-size: 42px;
   line-height: 48px;
   margin-bottom: 0px;
-  /* identical to box height, or 143% */
   letter-spacing: 0;
   font-family: "Lato", sans-serif;
-
-  /* text */
-
   color: #21252c;
 }
 
@@ -539,7 +531,6 @@ a {
   font-weight: normal;
   font-size: clamp(16px, 2vw, 20px);
   line-height: 33px;
-  /* or 26px */
   color: #707070;
 }
 
@@ -555,6 +546,39 @@ a {
   height: 100%;
   min-height: 850px;
 }
+
+/* parallax block */
+.parallax__block {
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+.parallax__block-one {
+  background-image: url("images/parallax-1.JPG");
+}
+
+.parallax__block-two {
+  background-image: url("images/parallax-4.JPG");
+}
+.parallax__block-three {
+  background-image: url("images/parallax-5.JPG");
+}
+.parallax__block-four {
+  background-image: url("images/parallax-11.JPG");
+}
+.parallax__block-six {
+  background-image: url("images/parallax-10.JPG");
+}
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1080px) {
+  .parallax__block {
+    background-attachment: scroll;
+  }
+}
+
 .text__about {
   margin: 20px auto 0;
   font-family: "Open Sans";
@@ -1156,9 +1180,12 @@ textarea {
   }
 }
 @media screen and (max-width: 639px) {
+  .parallax__block-one {
+    display: none;
+  }
   .title__screen {
     background-position-x: center;
-    background-image: url(images/title-mobile.jpg);
+    background-image: url("images/title-mobile.jpg");
   }
   h1 {
     max-width: 360px;
