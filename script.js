@@ -1,24 +1,4 @@
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-/*function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }*/
-
-  const hamburger = document.querySelector(".hamburger");
+const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", mobileMenu);
@@ -103,13 +83,58 @@ function offerThree(){
 }
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.from("#v-shot",{y:-1050, 
+gsap.from("#v-shot",{yPercent:-100, 
   scrollTrigger:{
       trigger:".container-4",
       start:"top bottom",
       end:"bottom top",
-      scrub:0,
+      scrub:"none",
       id:"L4",
-      //markers: true,
+      // markers: true,
       ease: "none"
 }});
+
+gsap.from("#asana",{yPercent:-60, 
+  scrollTrigger:{
+      trigger:".container-5",
+      start:"top bottom",
+      end:"bottom top",
+      scrub:"none",
+      id:"L5",
+      // markers: true,
+      ease: "none",
+      pin: "true",
+}});
+gsap.from("#field",{yPercent:-100, 
+  scrollTrigger:{
+      trigger:".container-6",
+      start:"top bottom",
+      end:"bottom top",
+      scrub:"none",
+      id:"L4",
+      // markers: true,
+      ease: "none"
+}});
+
+gsap.from("#coast",{yPercent:-100, 
+  scrollTrigger:{
+      trigger:".container-7",
+      start:"top bottom",
+      end:"bottom top",
+      scrub:"none",
+      id:"L4",
+      // markers: true,
+      ease: "none"
+}});
+gsap.from("#houses",{yPercent:-100, 
+  scrollTrigger:{
+      trigger:".container-8",
+      start:"top bottom",
+      end:"bottom top",
+      scrub:"none",
+      id:"L4",
+      // markers: true,
+      ease: "none"
+}});
+
+

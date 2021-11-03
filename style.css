@@ -96,7 +96,7 @@ p {
   background: transparent;
 }
 .block__third-container {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .block__four-container {
   margin-bottom: 100px;
@@ -580,14 +580,62 @@ a {
 }
 #v-shot {
   width: 100%;
-  top: -25%;
+  /* top: -15%; */
+  position: absolute;
+}
+#asana {
+  width: 100%;
+  top: -30%;
+  position: absolute;
+}
+#field {
+  width: 100%;
+  /* top: -15%; */
+  position: absolute;
+}
+#coast {
+  width: 100%;
+  /* top: -15%; */
+  position: absolute;
+}
+#houses {
+  width: 100%;
+  /* top: -15%; */
   position: absolute;
 }
 
 .container-4 {
-  margin-top: 30vh;
+  margin-top: 10vh;
   overflow: hidden;
-  height: 80vh;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.container-5 {
+  /* margin-top: 30vh; */
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.container-6 {
+  margin-top: 10vh;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.container-7 {
+  margin-top: 10vh;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.container-8 {
+  margin-top: 10vh;
+  overflow: hidden;
+  height: 100vh;
   width: 100vw;
   position: relative;
 }
