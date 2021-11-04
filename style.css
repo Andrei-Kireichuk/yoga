@@ -442,6 +442,11 @@ a {
   text-align: start;
   color: #707070;
 }
+.price__text-nostyle {
+  list-style-type: none !important;
+  text-align: center;
+  color: #000000;
+}
 
 .price__item {
   display: flex;
@@ -600,7 +605,7 @@ a {
 }
 #houses {
   width: 100%;
-  /* top: -15%; */
+  top: -15%;
   position: absolute;
 }
 

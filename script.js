@@ -82,59 +82,59 @@ function offerThree(){
   buttonThree.innerHTML = "Выбрано";
 }
 
-gsap.registerPlugin(ScrollTrigger);
-gsap.from("#v-shot",{yPercent:-100, 
-  scrollTrigger:{
-      trigger:".container-4",
-      start:"top bottom",
-      end:"bottom top",
-      scrub:"none",
-      id:"L4",
-      // markers: true,
-      ease: "none"
-}});
+// gsap.registerPlugin(ScrollTrigger);
+// gsap.from("#v-shot",{yPercent:-90, 
+//   scrollTrigger:{
+//       trigger:".container-4",
+//       start:"top bottom",
+//       end:"bottom top",
+//       scrub:"none",
+//       id:"L4",
+//       // markers: true,
+//       ease: Linear.easeNone
+// }});
 
-gsap.from("#asana",{yPercent:-60, 
-  scrollTrigger:{
-      trigger:".container-5",
-      start:"top bottom",
-      end:"bottom top",
-      scrub:"none",
-      id:"L5",
-      // markers: true,
-      ease: "none",
-      pin: "true",
-}});
-gsap.from("#field",{yPercent:-100, 
-  scrollTrigger:{
-      trigger:".container-6",
-      start:"top bottom",
-      end:"bottom top",
-      scrub:"none",
-      id:"L4",
-      // markers: true,
-      ease: "none"
-}});
+// gsap.from("#asana",{yPercent:-60, 
+//   scrollTrigger:{
+//       trigger:".container-5",
+//       start:"top bottom",
+//       end:"bottom top",
+//       scrub:"none",
+//       id:"L5",
+//       // markers: true,
+//       ease: "none",
+//       pin: "true",
+// }});
+// gsap.from("#field",{yPercent:-100, 
+//   scrollTrigger:{
+//       trigger:".container-6",
+//       start:"top bottom",
+//       end:"bottom top",
+//       scrub:"none",
+//       id:"L4",
+//       // markers: true,
+//       ease: "none"
+// }});
 
-gsap.from("#coast",{yPercent:-100, 
-  scrollTrigger:{
-      trigger:".container-7",
-      start:"top bottom",
-      end:"bottom top",
-      scrub:"none",
-      id:"L4",
-      // markers: true,
-      ease: "none"
-}});
-gsap.from("#houses",{yPercent:-100, 
-  scrollTrigger:{
-      trigger:".container-8",
-      start:"top bottom",
-      end:"bottom top",
-      scrub:"none",
-      id:"L4",
-      // markers: true,
-      ease: "none"
-}});
+// gsap.from("#coast",{yPercent:-100, 
+//   scrollTrigger:{
+//       trigger:".container-7",
+//       start:"top bottom",
+//       end:"bottom top",
+//       scrub:"none",
+//       id:"L4",
+//       // markers: true,
+//       ease: "none"
+// }});
+// gsap.from("#houses",{yPercent:-100, 
+//   scrollTrigger:{
+//       trigger:".container-8",
+//       start:"top bottom",
+//       end:"bottom top",
+//       scrub:"none",
+//       id:"L4",
+//       // markers: true,
+//       ease: "none"
+// }});
 
 

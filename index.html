@@ -20,14 +20,18 @@
   <meta name = "keywords" content = "IT,yogaforIT,йогадляайтишников,stressmanagement,антистресс,йогадлявсех,IT йога,йога на стуле,Йога пауза,йога для начинающих,йога упражнения,йога видео,занятия йогой,йога 10 минут,йога 20 минут,йога света ли,света ли,света ли йога">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
   </script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.js"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/CSSRulePlugin.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/Draggable.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/EaselPlugin.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/MotionPathPlugin.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollToPlugin.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/EasePack.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/EasePack.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
     <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
   <link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
@@ -110,11 +114,32 @@
         </div>
       </div>
         <!-- <div class="parallax__block parallax__block-one"></div> -->
-        <div class="container__parallax">
+        <!-- <div class="container__parallax">
           <div class="container-4">
       <img id="v-shot" src="images/parallax-1.JPG" alt="">
           </div>
-      </div>
+      </div> -->
+      <style type = "text/css">  
+        .parallaxParent {  
+           height: 100vh;  
+           overflow: hidden;  
+        }  
+        .parallaxParent > * {  
+           height: 200%;  
+           position: relative;  
+           top: -100%;  
+        }  
+        .pic {
+          width: 100%;
+          background-size: 100vw;
+          background-repeat: no-repeat;
+          
+        }
+     </style>
+      <div id = "parallax1" class = "parallaxParent">  
+        <div class="pic" style = "background-image: url(images/parallax-1.JPG);"></div>  
+     </div>
+    
 <div class="block__four-container">
   <h2 class="about">Корпоративная программа "Йога SMART"</h2>
   <div class="about__wrapper">
@@ -122,7 +147,7 @@
       <img class="image__float-left image__corporate" src="images/corporate.png" alt="pic">
       <p class="text__width">Корпоративная йога - это программа, обучающая
       техникам снятия напряжения и стресса на рабочем
-      месте (4-5 занятий по 2,5-3 часа). </p>
+      месте. </p>
       <p class="text__width">Практическая часть:<br>
       • упражнения (асаны),
       снимающие напряжения в теле,<br>
@@ -147,10 +172,13 @@
   </div>
 </div>
 <!-- <div class="parallax__block parallax__block-two"></div> -->
-<div class="container__parallax">
+<!-- <div class="container__parallax">
   <div class="container-5">
 <img id="asana" src="images/parallax-4.JPG" alt="">
   </div>
+</div> -->
+<div id = "parallax2" class = "parallaxParent">  
+  <div class="pic" style = "background-image: url(images/parallax-4.JPG);"></div>  
 </div>
       <div class="block__five-container">
         <h2 class="about">Отзывы учеников</h2>
@@ -252,19 +280,23 @@
   <div class="sales__price">
     <div class="price__item">
       <div class="price__offer">
-      <h3 class="price__euro">Видео-курс</h3>
+      <h3 class="price__euro">Йога старт</h3>
       <!-- <h3 class="price__euro">30 &#8364</h3> -->
       <h4 class="price__time"> 10 &#8364</h4> 
-      <h4 class="price__time"> </h4> 
-      <ul>20 занятий в месяц <br>5 прямых эфиров<br> в неделю:
-        <li class="price__text">пранаямы (дыхательные  практики)</li>
-        <li class="price__text">интенсивные занятия (кардио, силовая йога)</li>
-        <li class="price__text">общеукпепляющие комплексы</li>
-        <li class="price__text">упражнения на  балансы, </li>
-        <li class="price__text">инь йога</li>
-        <li class="price__text">йога нидра</li>
-        <li class="price__text">медитации</li>
-        <li class="price__text">неограниченный доступ к более 500 занятиям в записи</li>
+      <ul>Курс йога для начинающих, <br>три урока:
+        <h4 class="price__time">&nbsp</h4> 
+        <li class="price__text price__text-nostyle">Первый урок</li>
+        <li class="price__text">Правильное дыхание</li>
+        <li class="price__text">Правила выполнения базовых асан</li>
+        <li class="price__text">Комплекс для укрепления мышц спины и снятия напряжения</li>
+        <li class="price__text price__text-nostyle">Второй урок</li>
+        <li class="price__text">Асаны стоя</li>
+        <li class="price__text">Комплекс для укрепления ног</li>
+        <li class="price__text">Глубокое расслабление йога нидра</li>
+        <li class="price__text price__text-nostyle">Третий урок</li>
+        <li class="price__text">Комплекс сидя и лёжа на полу</li>
+        <li class="price__text">Укрепление мышц туловища</li>
+        <li class="price__text">Медитация</li>
       </ul>
     </div>
       <div class="g-form__button-wrapper">
@@ -273,10 +305,10 @@
     </div>
     <div class="price__item">
       <div class="price__offer">
-      <h3 class="price__euro">Онлайн-курс</h3>
+      <h3 class="price__euro">Yogalife</h3>
       <!-- <h3 class="price__euro">30 &#8364</h3> -->
-      <h4 class="price__time">1 месяц - 40 &#8364</h4> 
-      <h4 class="price__time">3 месяца - 105 &#8364</h4> 
+      <h4 class="price__time">1 месяц - 35 &#8364</h4> 
+      <h4 class="price__time">3 месяца - 90 &#8364</h4> 
       <ul>20 занятий в месяц <br>5 прямых эфиров<br> в неделю:
       <li class="price__text">пранаямы (дыхательные  практики)</li>
       <li class="price__text">интенсивные занятия (кардио, силовая йога)</li>
@@ -286,7 +318,6 @@
       <li class="price__text">йога нидра</li>
       <li class="price__text">медитации</li>
       <li class="price__text">неограниченный доступ к более 500 занятиям в записи</li>
-      <li class="price__text">+ 35 мин личная видео консультация/мес</li>
     </ul>
   </div>
     <div class="g-form__button-wrapper">
@@ -295,7 +326,7 @@
     </div>
     <div class="price__item">
       <div class="price__offer">
-      <h3 class="price__euro">Индивидуальная программа</h3>
+      <h3 class="price__euro">Yogalife+</h3>
       <!-- <h3 class="price__euro">30 &#8364</h3> -->
       <h4 class="price__time">1 месяц - 70 &#8364</h4> 
       <h4 class="price__time">3 месяца - 195 &#8364</h4> 
@@ -432,5 +463,26 @@
       }
     });
     </script>
+     <script>  
+      // init controller  
+      var controller = new ScrollMagic.Controller({
+         globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});  
+ 
+      // build scenes  
+      new ScrollMagic.Scene({triggerElement: "#parallax1"})  
+         .setTween("#parallax1 > div", {y: "80%", ease: Linear.easeNone})  
+         .addIndicators()  
+         .addTo(controller);  
+ 
+      new ScrollMagic.Scene({triggerElement: "#parallax2"})  
+         .setTween("#parallax2 > div", {y: "80%", ease: Linear.easeNone})  
+         .addIndicators()  
+         .addTo(controller);  
+ 
+      new ScrollMagic.Scene({triggerElement: "#parallax3"})  
+         .setTween("#parallax3 > div", {y: "80%", ease: Linear.easeNone})  
+         .addIndicators()  
+         .addTo(controller);  
+   </script>
 </body>
 </html>
